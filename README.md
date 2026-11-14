@@ -3,7 +3,10 @@
 A multi-threaded web directory and file enumerator built with Python (requests, argparse, concurrent.futures).
 
 ## Usage
-    ara-gog <url> -w <wordlist> [-t 20] [-x bak,txt,php] [-r]
+    ara-gog <url> -w <wordlist> [-t 20] [-x bak,txt,php] [-r] [--no-banner]
+
+## Banner
+Shows the shared spider signature on startup. `--no-banner` disables it; `NO_COLOR` makes it plain.
 
 ## Example
     ara-gog http://127.0.0.1:8000 -w words.txt -x bak,txt -r
